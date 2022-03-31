@@ -1,0 +1,9 @@
+@import url(./index.css);
+@import url(./stylesheets/utility.css);
+
+:root{
+    --primary-color: #907FA4;
+    --secondary-color: #A58FAA;
+    --bg-color: #A6D6D6;
+    --text-color: #EDEDD0;
+}

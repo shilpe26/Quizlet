@@ -1,0 +1,18 @@
+.heading span {
+    padding: .5rem 2rem;
+    border: 2px solid var(--bg-color);
+    cursor: pointer;
+}
+
+.heading span:hover {
+    border-color: var(--text-color);
+}
+
+.head3-2 {
+    color: var(--primary-color);
+}
+@media (max-width:768px) {
+    .center3{
+        height: 45vh;
+    }
+}
