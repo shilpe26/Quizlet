@@ -4,6 +4,16 @@
     cursor: pointer;
 }
 
+.container2 {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+    transition: all 0.6s ease-in-out;
+}
+
+.container2:hover {
+    box-shadow: var(--bg-color) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+}
+
 .heading span:hover {
     border-color: var(--text-color);
 }
@@ -11,8 +21,13 @@
 .head3-2 {
     color: var(--primary-color);
 }
+
 @media (max-width:768px) {
-    .center3{
-        height: 45vh;
+    .center3 {
+        height: 41vh;
+    }
+
+    .heading {
+        margin-top: 4rem;
     }
 }

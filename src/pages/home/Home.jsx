@@ -9,7 +9,7 @@ function Home() {
 			</h1>
 			<section className="cards_for-book cards_for-wish p-8 flex flex-wrap justify-around gapr">
 				{category.map((item) => (
-					<div className="center3 min-h-65" key={item._id}>
+					<div className="center3 min-h-62" key={item._id}>
 						<div className="container2">
 							<div className="img_container2">
 								<img className="img2" src={item.categoryImage} alt="category" />

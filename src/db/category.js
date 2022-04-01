@@ -6,7 +6,7 @@ export const category = [
 		categoryName: "DBMS",
 		categoryImage: "https://i.postimg.cc/SX8pVKyR/DBMS.png",
 		description:
-			"A database management system (or DBMS) is essentially nothing more than a computerized data-keeping system.",
+			"Test your knowledge for Database Management System.",
 		categoryValue: "DBMS",
 	},
 	{
@@ -14,7 +14,7 @@ export const category = [
 		categoryName: "DSA",
 		categoryImage: "https://i.postimg.cc/4YjgzcRj/DSA.jpg",
 		description:
-			"A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem.",
+			"Test your knowledge for Data Structure and Algorithm.",
 		categoryValue: "DSA",
 	},
 	{
@@ -22,7 +22,7 @@ export const category = [
 		categoryName: "JAVA",
 		categoryImage: "https://i.postimg.cc/ppGxL7GW/java.png",
 		description:
-			"Java is an object-oriented programming language that produces software for multiple platforms.",
+			"Test your knowledge for JAVA Programming Language.",
 		categoryValue: "JAVA",
 	},
 	{
@@ -30,7 +30,7 @@ export const category = [
 		categoryName: "OOPS",
 		categoryImage: "https://i.postimg.cc/FYYvdZ8j/oops.jpg",
 		description:
-			"Object-Oriented Programming System (OOPs) is a programming concept that works on the principles of abstraction, encapsulation, inheritance, and polymorphism.",
+			"Test your knowledge for Object-Oriented Programming System (OOPs).",
 		categoryValue: "OOPS",
 	},
 ];

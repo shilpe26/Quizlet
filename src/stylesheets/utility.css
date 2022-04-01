@@ -202,6 +202,9 @@
 .mb-20{
     margin-bottom: 5rem;
 }
+.mb-24{
+    margin-bottom: 6rem;
+}
 .ml-20{
     margin-left: 5rem;
 }
@@ -539,8 +542,8 @@
 /* -------------------------------------------------------------------------------- */
 
 /* min-height */
-.min-h-65{
-    height: 65vh;
+.min-h-62{
+    height: 62vh;
 }
 .min-h-0{
     min-height: 0px;
