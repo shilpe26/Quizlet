@@ -16,7 +16,7 @@ function Landing() {
 						</p>
 					</div>
 					<div className="btn-quiz mt-32">
-						<Link to="/home">
+						<Link to="/instruction">
 							<button
 								type="button"
 								className="btn btn-primary border-12 p-4 w-64"

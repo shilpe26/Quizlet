@@ -18,7 +18,7 @@ function Quiz() {
 			totalScore = showScore + 10;
 			setShowScore(totalScore);
 		} else {
-			totalScore = showScore - 10;
+			totalScore = showScore - 5;
 			setShowScore(totalScore);
 		}
 		const nextQuestion = currentQuestion + 1;
@@ -43,7 +43,7 @@ function Quiz() {
 					Q{currentQuestion + 1}. {quiz[currentQuestion].question}
 				</h3>
 				{quiz[currentQuestion].options.map((item) => (
-					<div className="inline-block mt-4 w-50p pb-8 text">
+					<div className="answer-options inline-block mt-4 w-50p pb-8 text">
 						<button
 							className="options-btn p-4 w-50p border-12 text-md"
 							onClick={() => answerHandler(item)}

@@ -1,0 +1,40 @@
+.intruction-head {
+    margin-top: -8rem;
+}
+
+.quiz-rules {
+    background-color: var(--bg-color);
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+
+.quiz-rules:hover {
+    box-shadow: var(--bg-color) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+}
+.correct-marks{
+    color: var(--correct-answer);
+}
+.wrong-marks{
+    color: var(--wrong-answer);
+}
+
+@media (max-width:768px) {
+    .intruction-head {
+        margin-top: 0rem;
+    }
+
+    .quiz-rules {
+        width: 72%;
+    }
+
+    .btn-quiz {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .quiz-rules h3{
+        font-size: 1.6rem;
+    }
+}

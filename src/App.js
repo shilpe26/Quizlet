@@ -6,6 +6,7 @@ import { Home, PageNotFound } from "./pages//Pages";
 import { Landing } from "./pages/landing/Landing";
 import { Quiz } from "./pages/quiz/Quiz";
 import { Result } from "./pages/result/Result";
+import { Instruction } from "./pages/instruction/Instruction";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Landing />} />
 					<Route path="/home" element={<Home />} />
+					<Route path="/instruction" element={<Instruction />} />
 					<Route path="/quiz" element={<Quiz />} />
 					<Route path="/result" element={<Result />} />
 					<Route path="*" element={<PageNotFound />} />

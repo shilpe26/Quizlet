@@ -5,11 +5,11 @@ function Result() {
 	const { getCategory, setGetCategory } = useCategory();
 
 	return (
-		<div className="text text-lg">
-			Your Final Score is{" "}
-			<span className="score-text-span font-extrabold">
+		<div className="result-score text text-lg">
+			Your Final Score is
+			<span className="score-text-span font-extrabold p-4">
 				{getCategory.showScore}
-			</span>{" "}
+			</span>
 			out of 50‼️
 		</div>
 	);

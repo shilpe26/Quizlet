@@ -8,4 +8,6 @@
     --text-color: #EDEDD0;
     --white-color: #fff;
     --black-color: #000;
+    --correct-answer: #046457;
+    --wrong-answer: #B7011C;
 }

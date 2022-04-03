@@ -208,6 +208,12 @@
 .ml-20{
     margin-left: 5rem;
 }
+.ml-26{
+    margin-left:26rem;
+}
+.mt-5{
+    margin-top: -5rem;
+}
 
 /* auto */
 .m-auto{
@@ -510,6 +516,9 @@
 }
 .w-40p{
     width: 40%;
+}
+.w-43p{
+    width: 43%;
 }
 .w-50p{
     width: 50%;
