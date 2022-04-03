@@ -1,0 +1,10 @@
+.options-btn{
+    background-color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    border-color: var(--primary-color);
+}
+.options-btn:hover{
+    box-shadow: var(--text-color) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+}
