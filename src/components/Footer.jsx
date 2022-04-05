@@ -30,7 +30,7 @@ function Footer() {
 						<i className="fab fa-github"></i>
 					</a>
 				</div>
-				<div className="credit">
+				<div className="credit text text-md mb-8">
 					Made with 💙 by<span> Shilpe Saxena</span>
 				</div>
 			</section>
