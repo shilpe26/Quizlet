@@ -5,7 +5,6 @@ export const questions = [
 		_id: uuid(),
 		title: "DBMS",
 		categoryValue: "dbms",
-
 		quiz: [
 			{
 				question: "What is the full form of DBMS?",
