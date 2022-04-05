@@ -8,9 +8,15 @@
     box-shadow: var(--text-color) 0px 19px 43px;
     transform: translate3d(0px, -1px, 0px);
 }
+.question-text{
+    margin-top: -9rem;
+}
 @media (max-width:768px) {
     .answer-options{
         width: 80%;
         margin-left: 4rem;
+    }
+    .question-text{
+        margin-top: 0;
     }
 }

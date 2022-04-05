@@ -1,9 +1,14 @@
+.heading{
+    margin-top: -9rem;
+}
 .heading span {
     padding: .5rem 2rem;
     border: 2px solid var(--bg-color);
     cursor: pointer;
 }
-
+.heading span:hover {
+    border-color: var(--text-color);
+}
 .container2 {
     transition: all 0.6s ease-in-out;
 }
@@ -11,10 +16,6 @@
 .container2:hover {
     box-shadow: var(--bg-color) 0px 19px 43px;
     transform: translate3d(0px, -1px, 0px);
-}
-
-.heading span:hover {
-    border-color: var(--text-color);
 }
 
 .head3-2 {

@@ -1,7 +1,14 @@
 .score-text-span {
     color: var(--primary-color);
 }
-
+.answer-green{
+    background-color: var(--correct-answer);
+    color: var(--white-color);
+    cursor: pointer;
+}
+.final-score{
+    border: 5px dashed var(--secondary-color);
+}
 @media (max-width:768px) {
     .result-score {
         margin-top: 2rem;
