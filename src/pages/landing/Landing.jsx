@@ -28,11 +28,7 @@ function Landing() {
 				</div>
 
 				<div className="image-quiz">
-					<img
-						src={LandingImage}
-						alt="landing-page-image"
-						className="bottom-12"
-					/>
+					<img src={LandingImage} alt="landing-page" className="bottom-12" />
 				</div>
 			</div>
 		</div>

@@ -404,9 +404,9 @@ export const questions = [
 				],
 			},
 		],
-
-		//   Question data set of OOPS
-
+	},
+	//   Question data set of OOPS
+	{
 		_id: uuid(),
 		title: "OOPS",
 		categoryValue: "oops",

@@ -5,7 +5,7 @@ import { questions } from "../../db/questions";
 import { useCategory } from "../../context/category-context";
 import { useNavigate } from "react-router-dom";
 function Home() {
-	const { getCategory, setGetCategory } = useCategory();
+	const { setGetCategory } = useCategory();
 	const navigate = useNavigate();
 
 	function categoryHandler(categoryValue) {

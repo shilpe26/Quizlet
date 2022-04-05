@@ -6,7 +6,7 @@ import "./quiz.css";
 
 function Quiz() {
 	const { getCategory, setGetCategory } = useCategory();
-	const [showWarning, setShowWarning] = useState(false);
+	const [showWarning] = useState(false);
 	const [showScore, setShowScore] = useState(10);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	let { quiz, title } = getCategory;
