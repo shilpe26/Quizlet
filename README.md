@@ -10,3 +10,5 @@
 ## Home Page
 ![Home page  quiz](https://user-images.githubusercontent.com/56014170/161750168-361a73a5-6051-49b9-ac5c-06d0bb2a7be0.gif)
 
+## Result Page
+![result page](https://user-images.githubusercontent.com/56014170/161911403-92a0f7b7-e169-4c86-a61d-378dd2d6c596.gif)
