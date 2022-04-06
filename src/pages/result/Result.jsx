@@ -2,7 +2,6 @@ import React from "react";
 import { useCategory } from "../../context/category-context";
 import "./result.css";
 import { Link } from "react-router-dom";
-import { questions } from "../../db/questions";
 
 function Result() {
 	const { getCategory } = useCategory();
