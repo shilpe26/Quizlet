@@ -6,18 +6,33 @@ import { Link } from "react-router-dom";
 function Result() {
 	const { getCategory } = useCategory();
 	const { quiz } = getCategory;
+	const scoreData = {
+		50: "5",
+		35: "4",
+		20: "3",
+		5: "2",
+		"-10": "1",
+	};
+	const correctCount = scoreData[getCategory.showScore.toString()];
 	return (
 		<div className="result-score text text-lg">
 			<div className="final-score text p-8 w-50p m-auto">
-				Your Final Score is
-				<span className="score-text-span font-extrabold p-4">
+				Score:
+				<span className="score-text-span font-extrabold pl-4">
 					{getCategory.showScore}
 				</span>
-				out of 50‼️
+				/50
+			</div>
+			<div className="correct-text mt-4 pr-16">
+				Correct:{" "}
+				<span className="score-text-span font-extrabold pl-4">
+					{correctCount}
+				</span>
+				/5
 			</div>
 			{quiz.map((item) => (
-				<div key={item.question} className="correct-ques-listing text mt-24">
-					{item.question}
+				<div key={item.question} className="correct-ques-listing text p-4">
+					<h4 className="mb-4">{item.question}</h4>
 					{item.options.map((option) => (
 						<div className="">
 							<p

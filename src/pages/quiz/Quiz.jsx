@@ -40,10 +40,10 @@ function Quiz() {
 		<div>
 			{showWarning && <Warning />}
 			<div>
-				<h2 className="question-text text mt-12 text-slg">
+				<h2 className="question-text text mt-12 text-slg p-4">
 					Welcome to {title} quiz
 				</h2>
-				<h3 className="text mt-24">
+				<h3 className="text mt-24 p-4">
 					Q{currentQuestion + 1}. {quiz[currentQuestion].question}
 				</h3>
 				{quiz[currentQuestion].options.map((item) => (

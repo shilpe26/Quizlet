@@ -9,6 +9,9 @@
 .final-score{
     border: 5px dashed var(--secondary-color);
 }
+.correct-text{
+    text-align: right;
+}
 @media (max-width:768px) {
     .result-score {
         margin-top: 2rem;
