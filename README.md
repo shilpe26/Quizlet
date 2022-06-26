@@ -1,5 +1,5 @@
 # <a href="https://the-quizlet-shilpe.netlify.app/"> QuizLet</a>🤔⁉️
- <p>Quiz application that tests on Computer Science Subjects. There are a total of five questions, which are multiple-choice questions. Each question has question, and multiple choices. Once the user clicks on the answers, user's answer become final and cannot be altered.</p>
+ <p>Quiz application that tests Computer Science Subjects. There are a total of five questions, which are multiple-choice questions. Each question has a question and multiple choices. Once the user clicks on the answers, the user's answer becomes final and cannot be altered.</p>
 
 ## Objective
 <p>The goal is to create an educational app that quizzes a user about a certain topic of your choice.</p>
