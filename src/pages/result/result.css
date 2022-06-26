@@ -6,6 +6,9 @@
     color: var(--white-color);
     cursor: pointer;
 }
+/* .answer-red{
+    color: red;
+} */
 .final-score{
     border: 5px dashed var(--secondary-color);
 }
