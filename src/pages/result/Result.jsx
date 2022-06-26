@@ -21,14 +21,24 @@ function Result() {
 					{item.question}
 					{item.options.map((option) => (
 						<div className="">
-							<p
+							{/* <p
 								key={option.answer}
 								className={`inline-block m-auto p-4 w-40p border-12 text-md ${
 									option.isCorrect ? "answer-green" : ""
 								}`}
+							> */}
+							<div
+								className={`quiz-answer-result ${
+									option.isClick & (option.isCorrect === true) && `correct`
+								} ${
+									(option.isClick === true) & (option.isCorrect === false) &&
+									`wrong`
+								} ${option.isCorrect === true && `correct`}`}
 							>
 								{option.answer}
-							</p>
+							</div>
+
+							{/* </p> */}
 						</div>
 					))}
 				</div>
