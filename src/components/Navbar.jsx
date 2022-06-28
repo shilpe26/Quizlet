@@ -8,7 +8,7 @@ function Navbar() {
 			<nav className="container-quiz px-16">
 				<h1 className="heading-quiz text-xlg">
 					<Link to="/">
-						<span className="span-quiz">QUIZ</span>LET⁉️🤔
+						<span className="span-quiz">QUIZ</span>LET⁉️
 					</Link>
 				</h1>
 			</nav>

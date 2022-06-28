@@ -5,7 +5,9 @@ import "./instruction.css";
 function Instruction() {
 	return (
 		<div className="">
-			<h1 className="intruction-head text-xlg text">Quiz Instructions</h1>
+			<h1 className="intruction-head text-lg text">
+				<u>Quiz Instructions</u>
+			</h1>
 			<div className="quiz-rules border-12 p-4 text-md w-43p m-auto">
 				<h3 className="font-medium">
 					<VscActivateBreakpoints className="mr-4" />

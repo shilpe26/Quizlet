@@ -8,9 +8,9 @@ function Landing() {
 			<div className="container-quiz mx-16">
 				<div>
 					<div className="content-quiz">
-						<h2 className="text-xmd">Quiz for Computer Science</h2>
+						<h2 className="text-lg">Quiz for Computer Science</h2>
 
-						<p className="para-quiz">
+						<p className="para-quiz text-xmd">
 							Test your knowledge about subjects like DBMS, DSA, JAVA, OOPS and
 							more using QuizLet.
 						</p>

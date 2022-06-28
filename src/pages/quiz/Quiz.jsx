@@ -18,23 +18,23 @@ function Quiz() {
 		setGetCategory((value) => ({ ...value, score: 0 }));
 	}, [setGetCategory]);
 
-	useEffect(() => {
-		const timerId = setInterval(
-			() => setTimerSec((timerSec) => timerSec - 1),
-			1000
-		);
-		return () => clearInterval(timerId);
-	}, []);
+	// useEffect(() => {
+	// 	const timerId = setInterval(
+	// 		() => setTimerSec((timerSec) => timerSec - 1),
+	// 		1000
+	// 	);
+	// 	return () => clearInterval(timerId);
+	// }, []);
 
-	useEffect(() => {
-		if (timerSec === 0) {
-			if (currentQuestion === 4) navigate("/result", { replace: true });
-			else {
-				// isClick = true;
-				setTimerSec(60);
-			}
-		}
-	}, [timerSec]);
+	// useEffect(() => {
+	// 	if (timerSec === 0) {
+	// 		if (currentQuestion === 4) navigate("/result", { replace: true });
+	// 		else {
+	// 			// isClick = true;
+	// 			setTimerSec(60);
+	// 		}
+	// 	}
+	// }, [timerSec]);
 
 	function answerHandler(item) {
 		let totalScore = 0;
