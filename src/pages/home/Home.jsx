@@ -23,7 +23,7 @@ function Home() {
 			<section className="cards_for-book cards_for-wish p-8 flex flex-wrap justify-around gapr">
 				{category.map((item) => (
 					<div
-						className="center3 min-h-65"
+						className="center3"
 						key={item._id}
 						onClick={() => categoryHandler(item.categoryValue)}
 					>

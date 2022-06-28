@@ -30,6 +30,7 @@ function Quiz() {
 		if (timerSec === 0) {
 			if (currentQuestion === 4) navigate("/result", { replace: true });
 			else {
+				// isClick = true;
 				setTimerSec(60);
 			}
 		}

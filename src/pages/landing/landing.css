@@ -4,7 +4,7 @@
 }
 
 .btn-primary {
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
 }
 
 .image-quiz img {
@@ -53,7 +53,6 @@
     .content-quiz {
         margin-top: 0.3rem;
     }
-
 
     .btn-quiz {
         display: flex;

@@ -9,6 +9,13 @@
 .heading span:hover {
     border-color: var(--text-color);
 }
+.center3{
+    width: 280px;
+    height: 57vh;
+}
+.img2{
+    width: 280px;
+}
 .container2 {
     transition: all 0.6s ease-in-out;
 }
@@ -24,7 +31,7 @@
 
 @media (max-width:768px) {
     .center3 {
-        height: 41vh;
+        height: 38vh;
     }
 
     .heading {
