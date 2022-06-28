@@ -32,7 +32,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 2rem;
+        margin: 2rem auto;
     }
     .quiz-rules h3{
         font-size: 1.6rem;

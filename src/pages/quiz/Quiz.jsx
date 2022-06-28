@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import { Warning } from "../../components/Warning";
 import { useCategory } from "../../context/category-context";
@@ -9,12 +10,30 @@ function Quiz() {
 	const [showWarning] = useState(false);
 	const [showScore, setShowScore] = useState(10);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
+	const [timerSec, setTimerSec] = useState(60);
 	let { quiz, title } = getCategory;
 	const navigate = useNavigate();
 
 	useEffect(() => {
 		setGetCategory((value) => ({ ...value, score: 0 }));
 	}, [setGetCategory]);
+
+	useEffect(() => {
+		const timerId = setInterval(
+			() => setTimerSec((timerSec) => timerSec - 1),
+			1000
+		);
+		return () => clearInterval(timerId);
+	}, []);
+
+	useEffect(() => {
+		if (timerSec === 0) {
+			if (currentQuestion === 4) navigate("/result", { replace: true });
+			else {
+				setTimerSec(60);
+			}
+		}
+	}, [timerSec]);
 
 	function answerHandler(item) {
 		let totalScore = 0;
@@ -40,9 +59,14 @@ function Quiz() {
 		<div>
 			{showWarning && <Warning />}
 			<div>
+				<div className="timer">
+					<FontAwesomeIcon icon="stopwatch" />
+					<span className="timer-sec">{timerSec} sec</span>
+				</div>
 				<h2 className="question-text text mt-12 text-slg p-4">
 					Welcome to {title} quiz
 				</h2>
+
 				<h3 className="text mt-24 p-4">
 					Q{currentQuestion + 1}. {quiz[currentQuestion].question}
 				</h3>

@@ -31,16 +31,13 @@ function Result() {
 				/5
 			</div>
 			{quiz.map((item) => (
-				<div key={item.question} className="correct-ques-listing text p-4">
+				<div
+					key={item.question}
+					className="correct-ques-listing text p-4 text-xmd"
+				>
 					<h4 className="mb-4">{item.question}</h4>
 					{item.options.map((option) => (
-						<div className="">
-							{/* <p
-								key={option.answer}
-								className={`inline-block m-auto p-4 w-40p border-12 text-md ${
-									option.isCorrect ? "answer-green" : ""
-								}`}
-							> */}
+						<div>
 							<div
 								className={`quiz-answer-result ${
 									option.isClick & (option.isCorrect === true) && `correct`
@@ -51,13 +48,11 @@ function Result() {
 							>
 								{option.answer}
 							</div>
-
-							{/* </p> */}
 						</div>
 					))}
 				</div>
 			))}
-			<div className="play-again-container flex items-center justify-center mt-32">
+			<div className="play-again-container flex items-center justify-center mt-16">
 				<Link to="/home">
 					<button type="button" className="btn btn-primary border-12 p-4 w-64">
 						Play Again
