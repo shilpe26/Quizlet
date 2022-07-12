@@ -1,40 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import { Warning } from "../../components/Warning";
-import { useCategory } from "../../context/category-context";
+import { useDispatch, useSelector } from "react-redux";
+import { setQuiz, resetScore, setScore } from "../../redux/categorySlice";
 import "./quiz.css";
 
 function Quiz() {
-	const { getCategory, setGetCategory } = useCategory();
+	const ques = useSelector((state) => state.category.ques);
+	const dispatch = useDispatch();
 	const [showWarning] = useState(false);
 	const [showScore, setShowScore] = useState(10);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [timerSec, setTimerSec] = useState(60);
-	let { quiz, title } = getCategory;
+	let { quiz, title } = ques;
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		setGetCategory((value) => ({ ...value, score: 0 }));
-	}, [setGetCategory]);
-
-	// useEffect(() => {
-	// 	const timerId = setInterval(
-	// 		() => setTimerSec((timerSec) => timerSec - 1),
-	// 		1000
-	// 	);
-	// 	return () => clearInterval(timerId);
-	// }, []);
-
-	// useEffect(() => {
-	// 	if (timerSec === 0) {
-	// 		if (currentQuestion === 4) navigate("/result", { replace: true });
-	// 		else {
-	// 			// isClick = true;
-	// 			setTimerSec(60);
-	// 		}
-	// 	}
-	// }, [timerSec]);
+		dispatch(resetScore());
+	}, []);
 
 	function answerHandler(item) {
 		let totalScore = 0;
@@ -48,10 +30,11 @@ function Quiz() {
 		const nextQuestion = currentQuestion + 1;
 
 		if (nextQuestion < quiz.length) {
-			item.isClick = true;
+			// item.isClick = true;
 			setCurrentQuestion(nextQuestion);
 		} else {
-			setGetCategory({ showScore, quiz });
+			dispatch(setScore(showScore));
+			dispatch(setQuiz(quiz));
 			navigate("/result");
 		}
 	}
@@ -60,10 +43,6 @@ function Quiz() {
 		<div>
 			{showWarning && <Warning />}
 			<div>
-				<div className="timer">
-					<FontAwesomeIcon icon="stopwatch" />
-					<span className="timer-sec">{timerSec} sec</span>
-				</div>
 				<h2 className="question-text text mt-12 text-slg p-4">
 					Welcome to {title} quiz
 				</h2>

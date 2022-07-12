@@ -2,17 +2,19 @@ import React from "react";
 import "./home.css";
 import category from "../../db/category";
 import { questions } from "../../db/questions";
-import { useCategory } from "../../context/category-context";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setQues } from "../../redux/categorySlice";
+
 function Home() {
-	const { setGetCategory } = useCategory();
+	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
 	function categoryHandler(categoryValue) {
 		const findCategory = questions.find(
 			(findele) => findele.categoryValue === categoryValue
 		);
-		setGetCategory(findCategory);
+		dispatch(setQues(findCategory));
 		navigate("/quiz");
 	}
 	return (

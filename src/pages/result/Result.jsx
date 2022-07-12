@@ -1,11 +1,11 @@
 import React from "react";
-import { useCategory } from "../../context/category-context";
 import "./result.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Result() {
-	const { getCategory } = useCategory();
-	const { quiz } = getCategory;
+	const { ques, score } = useSelector((state) => state.category);
+	const { quiz } = ques;
 	const scoreData = {
 		50: "5",
 		35: "4",
@@ -13,14 +13,12 @@ function Result() {
 		5: "2",
 		"-10": "1",
 	};
-	const correctCount = scoreData[getCategory.showScore.toString()];
+	const correctCount = scoreData[score.toString()];
 	return (
 		<div className="result-score text text-lg">
 			<div className="final-score text p-8 w-50p m-auto">
 				Score:
-				<span className="score-text-span font-extrabold pl-4">
-					{getCategory.showScore}
-				</span>
+				<span className="score-text-span font-extrabold pl-4">{score}</span>
 				/50
 			</div>
 			<div className="correct-text mt-4 pr-16">
@@ -37,7 +35,7 @@ function Result() {
 				>
 					<h4 className="mb-4">{item.question}</h4>
 					{item.options.map((option) => (
-						<div>
+						<div key={option.answer}>
 							<div
 								className={`quiz-answer-result ${
 									option.isClick & (option.isCorrect === true) && `correct`
