@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Warning } from "../../components/Warning";
 import { useDispatch, useSelector } from "react-redux";
-import { setQuiz, resetScore, setScore } from "../../redux/categorySlice";
+import {
+	setQuiz,
+	resetScore,
+	setScore,
+	updateUserClick,
+} from "../../redux/categorySlice";
 import "./quiz.css";
 
 function Quiz() {
@@ -18,26 +23,27 @@ function Quiz() {
 		dispatch(resetScore());
 	}, []);
 
-	function answerHandler(item) {
+	const answerHandler = (item) => {
 		let totalScore = 0;
 		if (item.isCorrect) {
 			totalScore = showScore + 10;
 			setShowScore(totalScore);
+			dispatch(updateUserClick(item.id));
 		} else {
 			totalScore = showScore - 5;
 			setShowScore(totalScore);
+			dispatch(updateUserClick(item.id));
 		}
 		const nextQuestion = currentQuestion + 1;
 
 		if (nextQuestion < quiz.length) {
-			// item.isClick = true;
 			setCurrentQuestion(nextQuestion);
 		} else {
 			dispatch(setScore(showScore));
 			dispatch(setQuiz(quiz));
 			navigate("/result");
 		}
-	}
+	};
 
 	return (
 		<div>

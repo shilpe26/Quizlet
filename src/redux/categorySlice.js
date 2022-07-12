@@ -18,9 +18,17 @@ export const categorySlice = createSlice({
 		setQues: (state, action) => {
 			state.ques = action.payload;
 		},
+		updateUserClick: (state, action) => {
+			state.ques.quiz.map((quest) =>
+				quest.options.map((ans) =>
+					ans.id === action.payload ? (ans.isClick = true) : ans
+				)
+			);
+		},
 	},
 });
 
-export const { resetScore, setQuiz, setQues, setScore } = categorySlice.actions;
+export const { resetScore, setQuiz, setQues, setScore, updateUserClick } =
+	categorySlice.actions;
 
 export default categorySlice.reducer;
