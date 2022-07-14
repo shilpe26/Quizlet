@@ -27,4 +27,7 @@
     .question-text{
         margin-top: 0;
     }
+    .options-btn{
+        width: 65%;
+    }
 }

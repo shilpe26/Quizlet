@@ -12,10 +12,12 @@
     box-shadow: var(--bg-color) 0px 19px 43px;
     transform: translate3d(0px, -1px, 0px);
 }
-.correct-marks{
+
+.correct-marks {
     color: var(--correct-answer);
 }
-.wrong-marks{
+
+.wrong-marks {
     color: var(--wrong-answer);
 }
 
@@ -32,9 +34,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 2rem auto;
+        margin: auto;
+        margin-top: 2rem;
     }
-    .quiz-rules h3{
+
+    .quiz-rules h3 {
         font-size: 1.6rem;
     }
 }
