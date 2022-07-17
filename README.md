@@ -10,5 +10,12 @@
 ## Home Page
 ![Home page  quiz](https://user-images.githubusercontent.com/56014170/161750168-361a73a5-6051-49b9-ac5c-06d0bb2a7be0.gif)
 
+## Instruction Page
+![Screenshot (637)](https://user-images.githubusercontent.com/56014170/179404449-53ad4621-d98d-4f4a-b4f4-3ddea4895022.png)
+
+## Category Page
+![Screenshot (638)](https://user-images.githubusercontent.com/56014170/179404471-1ba7c0f2-ef28-4fa9-a6d2-d97c08efdede.png)
+
 ## Result Page
-![result page](https://user-images.githubusercontent.com/56014170/161911403-92a0f7b7-e169-4c86-a61d-378dd2d6c596.gif)
+![resultQuiz](https://user-images.githubusercontent.com/56014170/179404408-c4a92813-6366-48bd-8975-31aa13704899.gif)
+
