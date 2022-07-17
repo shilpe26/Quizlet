@@ -21,16 +21,20 @@
     margin-top: 1.5rem;
     font-size: 1.5rem;
 }
+
 .quiz-answer-result.correct {
     background-color: var(--correct-answer);
     color: var(--white-color);
 }
-.final-score{
+
+.final-score {
     border: 5px dashed var(--secondary-color);
 }
-.correct-text{
+
+.correct-text {
     text-align: right;
 }
+
 .quiz-answer-result.wrong {
     background-color: var(--wrong-answer);
     color: var(--white-color);

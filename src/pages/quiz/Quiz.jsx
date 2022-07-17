@@ -21,7 +21,7 @@ function Quiz() {
 
 	useEffect(() => {
 		dispatch(resetScore());
-	}, []);
+	}, [dispatch]);
 
 	const answerHandler = (item) => {
 		let totalScore = 0;
