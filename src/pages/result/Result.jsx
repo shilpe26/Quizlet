@@ -33,7 +33,7 @@ function Result() {
 					key={item.question}
 					className="correct-ques-listing text p-4 text-xmd"
 				>
-					<h4 className="mb-4">{item.question}</h4>
+					<h4 className="mb-4 text-lg">{item.question}</h4>
 					{item.options.map((option) => (
 						<div key={option.answer}>
 							<div

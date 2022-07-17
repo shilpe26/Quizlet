@@ -1,33 +1,38 @@
-.options-btn{
+.options-btn {
     background-color: var(--text-color);
     cursor: pointer;
     transition: all 0.6s ease-in-out;
     border-color: var(--primary-color);
 }
-.options-btn:hover{
+
+.options-btn:hover {
     box-shadow: var(--text-color) 0px 19px 43px;
     transform: translate3d(0px, -1px, 0px);
 }
-.question-text{
+
+.questions-sets {
     margin-top: -10rem;
 }
+
 .timer {
-   display: flex;
-   align-items: flex-end;
-   justify-content: flex-end;
-   padding-right: 10rem;
-   font-size: 1.5rem;
-  }
- 
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 10rem;
+    font-size: 1.5rem;
+}
+
 @media (max-width:768px) {
-    .answer-options{
+    .answer-options {
         width: 85%;
         margin-left: 3rem;
     }
-    .question-text{
-        margin-top: 0;
+
+    .questions-sets {
+        margin-top: 2rem;
     }
-    .options-btn{
+
+    .options-btn {
         width: 65%;
     }
 }

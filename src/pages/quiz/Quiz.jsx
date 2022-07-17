@@ -46,10 +46,10 @@ function Quiz() {
 	};
 
 	return (
-		<div>
+		<div className="questions-sets">
 			{showWarning && <Warning />}
 			<div>
-				<h2 className="question-text text mt-12 text-slg p-4">
+				<h2 className="question-text text mt-12 text-lg p-4">
 					Welcome to {title} quiz
 				</h2>
 

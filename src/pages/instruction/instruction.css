@@ -1,11 +1,10 @@
-.intruction-head {
-    margin-top: -9rem;
-}
-
 .quiz-rules {
     background-color: var(--bg-color);
     cursor: pointer;
     transition: all 0.6s ease-in-out;
+}
+.instrusctions-sets{
+    margin-top: -4rem;
 }
 
 .quiz-rules:hover {
@@ -22,9 +21,9 @@
 }
 
 @media (max-width:768px) {
-    .intruction-head {
-        margin-top: 0rem;
-    }
+    .instrusctions-sets {
+        margin-top: 2rem;
+      }
 
     .quiz-rules {
         width: 72%;

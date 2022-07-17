@@ -4,7 +4,7 @@ import { VscActivateBreakpoints } from "react-icons/vsc";
 import "./instruction.css";
 function Instruction() {
 	return (
-		<div className="">
+		<div className="instrusctions-sets">
 			<h1 className="intruction-head text-lg text">
 				<u>Quiz Instructions</u>
 			</h1>

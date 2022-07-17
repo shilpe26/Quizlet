@@ -1,7 +1,7 @@
 import "./App.css";
 import "./stylesheets/utility.css";
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Footer } from "./components/Cmponents";
+import { Navbar, Footer } from "./components/Components";
 import { Home, PageNotFound } from "./pages//Pages";
 import { Landing } from "./pages/landing/Landing";
 import { Quiz } from "./pages/quiz/Quiz";

@@ -6,11 +6,11 @@ function Navbar() {
 	return (
 		<div>
 			<nav className="container-quiz px-16">
-				<h1 className="heading-quiz text-xlg">
-					<Link to="/">
+				<Link to="/">
+					<h1 className="heading-quiz text-xlg">
 						<span className="span-quiz">QUIZ</span>LET⁉️
-					</Link>
-				</h1>
+					</h1>
+				</Link>
 			</nav>
 		</div>
 	);
